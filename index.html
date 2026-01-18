@@ -217,37 +217,37 @@
     </main>
     <footer>
         <section id="contact-us">
-            Contact Us <span id="required">(*required)</span>
+            <h2>Contact Us <span id="required">(*required)</span></h2>
             
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="first-name">First Name<span>*</span></label>
+                    <input id="first-name" type="text" name="first-name" required>
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="last-name">Last Name<span>*</span></label>
+                    <input id="last-name" type="text" name="last-name" required>
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span>*</span></label>
+                    <input id="email" type="email" name="email" required>
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input id="phone" type="tel" name="phone" required>
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input id="pref-email" type="radio" name="preferred-contact" checked>
+                        <label for="pref-email">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input id="pref-text" type="radio" name="preferred-contact">
+                        <label for="pref-text">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input id="pref-phone" type="radio" name="preferred-contact">
+                        <label for="phone">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
@@ -276,7 +276,7 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
+                <input type="submit" id="submit">
             
         </section>
         <section id="legal">
