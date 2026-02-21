@@ -36,9 +36,9 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="main-content">
         <article>
-            <h2 id="main-content">Majorca</h2>
+            <h2 >Majorca</h2>
             <section id="intro">
 
                 <h3>Introduction</h3>
@@ -127,7 +127,7 @@
                             <dt>Traveling From:</dt>
                             <dd>London, England</dd>
                         </dl>
-                        "I traveled here for business, but my stay was extended. Now it is my home."
+                        <blockquote>"I traveled here for business, but my stay was extended. Now it is my home."</blockquote>
                     </div>
                 </section>
                 <section>
@@ -153,7 +153,7 @@
                             <dt>Traveling From:</dt>
                             <dd>Berlin, Germany</dd>
                         </dl>
-                        "Great escape from my reality. Beautiful sunsets, wonderful people, great beer."
+                        <blockquote>"Great escape from my reality. Beautiful sunsets, wonderful people, great beer."</blockquote>
                     </div>
                 </section>
                 <section>
@@ -179,7 +179,7 @@
                             <dt>Traveling From:</dt>
                             <dd>Barcelona, Spain</dd>
                         </dl>
-                        "A very safe environment for all travelers."
+                        <blockquote>"A very safe environment for all travelers."</blockquote>
                     </div>
                 </section>
                 <section>
@@ -205,7 +205,7 @@
                             <dt>Traveling From:</dt>
                             <dd>Madrid, Spain</dd>
                         </dl>
-                        "Live, laugh, love-- everything you need in Majorca."
+                        <blockquote>"Live, laugh, love-- everything you need in Majorca."</blockquote>
                     </div>
                 </section>
             </section>
@@ -290,24 +290,24 @@
                     <label for="phone">Phone<span>*</span></label>
                     <input id="phone" class="form-control" type="tel" name="phone" autocomplete="tel" required>
                 </div>
-                <fieldset id="preferred-contact">
+                <fieldset id="preferred-contact" required>
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input id="pref-email" type="radio" name="preferred-contact" checked>
+                        <input id="pref-email" type="radio" name="preferred-contact" value="pref-email" checked>
                         <label for="pref-email">Email</label>
                     </div>
                     <div>
-                        <input id="pref-text" type="radio" name="preferred-contact">
+                        <input id="pref-text" type="radio" name="preferred-contact" value="pref-text">
                         <label for="pref-text">Text</label>
                     </div>
                     <div>
-                        <input id="pref-phone" type="radio" name="preferred-contact">
-                        <label for="phone">Phone</label>
+                        <input id="pref-phone" type="radio" name="preferred-contact" value="pref-phone">
+                        <label for="pref-phone">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
+                    <select id="select-destination" name="select-destination" required>
                         <option>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
@@ -322,7 +322,7 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
+                    <select id="select-travel-time" name="select-travel-time" required>
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
